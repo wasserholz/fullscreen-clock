@@ -1,0 +1,22 @@
+.App, .fullscreen {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  color:#eef;
+}
+
+.App > button {
+  background-color: #454566;
+  color: #eef;
+  font-size: 1.2em;
+  border-radius: 4px;
+}
+
+.App .centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.4em;
+  font-weight: bold;
+}
