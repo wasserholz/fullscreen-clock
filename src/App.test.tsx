@@ -2,9 +2,15 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import App from './App';
 
-test('renders clock component', () => {
+test('renders class-clock component', () => {
   const { getByTestId } = render(<App />);
-  const linkElement = getByTestId(/clock/i);
+  const linkElement = getByTestId(/class-clock/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+test('renders hook-clock component', () => {
+  const { getByTestId } = render(<App />);
+  const linkElement = getByTestId(/hook-clock/i);
   expect(linkElement).toBeInTheDocument();
 });
 
